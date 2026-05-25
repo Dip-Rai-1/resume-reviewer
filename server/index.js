@@ -1,8 +1,14 @@
 const express = require("express");
+const router = express.Router();
+const { review } = require("./services/openai");
+
 const app = express();
-const port = 3000;
+require("dotenv").config();
+
+const port = process.env.PORT;
 
 app.get("/", (req, res) => {
   res.send(`Hello World. Server is running at port ${port}`);
 });
-app.listen(port, () => console.log("Server running"));
+
+app.listen(port || 8000, () => console.log("Server running"));
