@@ -12,8 +12,6 @@ node_modules
 dist
 dist-ssr
 *.local
-example.mjs
-routes
 
 # Editor directories and files
 .vscode/*

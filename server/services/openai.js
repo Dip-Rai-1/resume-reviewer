@@ -34,34 +34,35 @@ ${resumeText}`,
     ],
   });
   const raw = response.choices[0].message.content;
-  console.log(JSON.parse(raw.replace(/```json|```/g, "").trim()));
+  return JSON.parse(raw.replace(/```json|```/g, "").trim());
 }
-reviewResume(
-  `John Smith
-Software Engineer
-john.smith@email.com | linkedin.com/in/johnsmith | github.com/johnsmith
 
-EDUCATION
-Bachelor of Computer Science
-University of Sydney, 2023
+// reviewResume(
+//   `John Smith
+// Software Engineer
+// john.smith@email.com | linkedin.com/in/johnsmith | github.com/johnsmith
 
-SKILLS
-JavaScript, React, Node.js, Express, MongoDB, Python, Git, HTML, CSS
+// EDUCATION
+// Bachelor of Computer Science
+// University of Sydney, 2023
 
-PROJECTS
+// SKILLS
+// JavaScript, React, Node.js, Express, MongoDB, Python, Git, HTML, CSS
 
-Pizza Delivery App
-- Built a react based pizza ordering app
-- Used redux for state management
-- Worked on the frontend components
+// PROJECTS
 
-Weather App
-- Made a weather app using API
-- Used React hooks
+// Pizza Delivery App
+// - Built a react based pizza ordering app
+// - Used redux for state management
+// - Worked on the frontend components
 
-EXPERIENCE
-No professional experience yet. Currently seeking junior developer roles.`,
-  "junior dev",
-);
+// Weather App
+// - Made a weather app using API
+// - Used React hooks
+
+// EXPERIENCE
+// No professional experience yet. Currently seeking junior developer roles.`,
+//   "junior dev",
+// );
 
 module.exports = { reviewResume };
