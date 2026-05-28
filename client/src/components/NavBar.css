@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.nav-badge {
+  color: #afa9ec;
+  border: 1px solid #534ab7;
+  padding: 4px 12px;
+  border-radius: 2rem;
+}

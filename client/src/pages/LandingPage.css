@@ -1,0 +1,15 @@
+.hero {
+  margin: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #6b7280;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 8px;
+  margin: 0 2rem;
+}
