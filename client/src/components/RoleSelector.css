@@ -1,0 +1,28 @@
+.form-actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.role-select {
+  width: 85%;
+  height: 3rem;
+  flex: 3;
+  padding: 0 1rem;
+  background-color: #1e1e2e;
+  color: #ffffff;
+  border: 0.5px solid #3a3a5c;
+  border-radius: 8px;
+}
+
+.analyse-btn {
+  flex: 1;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: #534ab7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+}

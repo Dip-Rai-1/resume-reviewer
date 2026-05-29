@@ -1,6 +1,6 @@
 .upload-zone {
   margin: 2rem;
-  border: 1.5px dashed #3a3a5c;
+  border: 1.5px dashed #534ab7;
   border-radius: 8px;
   background: #1e1e2e;
 }
@@ -30,7 +30,7 @@
   background: #1e1e2e;
   border-radius: 8px;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   resize: none;
   box-sizing: border-box;

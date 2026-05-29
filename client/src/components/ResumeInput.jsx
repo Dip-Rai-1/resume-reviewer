@@ -1,5 +1,6 @@
 import { FaClipboard } from "react-icons/fa";
 import "./ResumeInput.css";
+import RoleSelector from "./RoleSelector";
 
 export default function ResumeInput() {
   return (
@@ -13,10 +14,11 @@ export default function ResumeInput() {
       <textarea
         className="resume-input"
         placeholder={
-          "John Smith\nSoftware Engineer|React,Node.js, Python\n\n Experience..."
+          "John Smith\nSoftware Engineer|React,Node.js, Python\n\nExperience..."
         }
         rows={6}
       />
+      <RoleSelector />
     </div>
   );
 }

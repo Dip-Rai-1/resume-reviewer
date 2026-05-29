@@ -1,0 +1,7 @@
+.trust-badges {
+  display: flex;
+  margin: 1rem 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #6b7280;
+}

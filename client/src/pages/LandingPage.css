@@ -1,5 +1,5 @@
 .hero {
-  margin: 2rem;
+  margin: 4rem;
   text-align: center;
   color: #ffffff;
 }
@@ -12,4 +12,10 @@
   display: flex;
   gap: 8px;
   margin: 0 2rem;
+}
+
+.divider {
+  border: none;
+  border-top: 0.5px solid #3a3a5c;
+  margin: 3.5rem 2rem 0 2rem;
 }

@@ -1,26 +1,25 @@
 import FeatureCards from "../components/FeatureCards";
+import Hero from "../components/Hero";
 import ResumeInput from "../components/ResumeInput";
-import RoleSelector from "../components/RoleSelector";
+import TrustBadges from "../components/TrustBadges";
 import "./LandingPage.css";
-// import { FaTags } from "react-icons/fa";
-// import { FaLightbulb } from "react-icons/fa";
 
 export default function LandingPage() {
   return (
     <div>
-      <div className="hero">
-        <h2>Get your resume reviewed instantly</h2>
-        <p>
-          Paste your resume and our AI gives your actionable feedback in seconds
-        </p>
-      </div>
+      {/* Hero */}
+      <Hero />
       {/* Feature Cards */}
 
       <FeatureCards />
 
       {/* Resume paste area */}
       <ResumeInput />
-      <RoleSelector />
+
+      <hr className="divider" />
+
+      {/*Trust Badges  */}
+      <TrustBadges />
     </div>
   );
 }
