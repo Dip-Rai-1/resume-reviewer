@@ -1,0 +1,30 @@
+.score-hero {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: #eeedfe;
+}
+
+.score-hero__info > h3 {
+  color: #3c3489;
+}
+
+.score-hero__info > p {
+  color: #7f77dd;
+}
+
+.score-hero__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-hero__score > h1 {
+  color: #3c3489;
+}
+
+.score-hero__score > span {
+  color: #534ab7;
+}

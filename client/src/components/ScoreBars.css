@@ -1,0 +1,36 @@
+.score-bars {
+  margin: 0 2rem;
+}
+
+.score-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.score-bar__label {
+  font-size: 1.2rem;
+  color: #6b7280;
+  min-width: 6rem;
+}
+
+.score-bar__track {
+  flex: 1;
+  background: #2a2a3e;
+  border-radius: 9.9rem;
+  height: 0.6rem;
+  overflow: hidden;
+}
+
+.score-bar__fill {
+  height: 0.6rem;
+  border-radius: 9.9rem;
+}
+
+.score-bar__value {
+  font-size: 1.2rem;
+  color: #ffffff;
+  min-width: 24px;
+  text-align: right;
+}

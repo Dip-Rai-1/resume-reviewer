@@ -1,0 +1,25 @@
+.keywords {
+  padding: 2rem;
+}
+
+.keywords__pills {
+  margin: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.pill--missing {
+  background-color: #fcebeb;
+  color: #a32d2d;
+}
+
+.pill--found {
+  background-color: #eaf3de;
+  color: #3b6d11;
+}
