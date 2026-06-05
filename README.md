@@ -105,6 +105,11 @@ resume-reviewer/
     └── index.js
 ```
 
+## Screenshots
+
+![Landing Page](screenshots/landing.png)
+![Results Page](screenshots/results.png)
+
 ---
 
 ## Author
