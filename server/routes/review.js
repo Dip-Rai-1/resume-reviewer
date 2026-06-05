@@ -4,7 +4,7 @@ const { reviewResume } = require("../services/openai");
 
 router.post("/review", async (req, res) => {
   try {
-    const { resumeText, role } = req.body;
+    const { resumeText, role } = await req.body;
     if (!resumeText || resumeText.trim().length < 50) {
       return res.status(400).json({ error: "Please provide a valid resume" });
     }

@@ -2,20 +2,30 @@
   margin: 2rem;
 }
 
+.suggestions-list h3 {
+  color: #ffffff;
+}
+
 .suggestion-row {
   display: flex;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #3a3a5c;
   gap: 1rem;
   align-items: center;
   padding: 1rem 0;
 }
+
+.suggestion-text {
+  color: #ffffff;
+}
+
 .priority {
-  padding: 2px 8px;
+  padding: 4px 10px;
   border-radius: 99px;
-  font-size: 11px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 
 .priority-high {
@@ -31,7 +41,4 @@
 .priority-low {
   background-color: #eaf3de;
   color: #3b6d11;
-}
-.suggestion-text {
-  /* flex: 4; */
 }

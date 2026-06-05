@@ -1,5 +1,5 @@
 .form-actions {
-  margin: 2rem 0;
+  margin: 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -25,4 +25,10 @@
   color: #ffffff;
   border: none;
   border-radius: 8px;
+}
+
+.analyse-btn:hover {
+  background: #3c3489;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }

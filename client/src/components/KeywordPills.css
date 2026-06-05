@@ -2,6 +2,10 @@
   padding: 2rem;
 }
 
+.keywords__title {
+  color: #ffffff;
+}
+
 .keywords__pills {
   margin: 0.5rem 0;
   display: flex;

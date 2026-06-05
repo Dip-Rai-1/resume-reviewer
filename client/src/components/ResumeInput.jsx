@@ -1,8 +1,7 @@
 import { FaClipboard } from "react-icons/fa";
 import "./ResumeInput.css";
-import RoleSelector from "./RoleSelector";
 
-export default function ResumeInput() {
+export default function ResumeInput({ onChange, error }) {
   return (
     <div style={{ padding: "2rem" }} className="upload-zone">
       <div className="upload-zone__header">
@@ -17,8 +16,9 @@ export default function ResumeInput() {
           "John Smith\nSoftware Engineer|React,Node.js, Python\n\nExperience..."
         }
         rows={6}
+        onChange={(e) => onChange(e.target.value)}
       />
-      <RoleSelector />
+      {error && <p style={{ color: "#E24B4A" }}>{error}</p>}
     </div>
   );
 }

@@ -1,22 +1,22 @@
 import MetricCard from "./MetricCard";
 import "./MetricCards.css";
 
-export default function MetricCards() {
+export default function MetricCards({ scores }) {
   return (
     <div className="metric-cards">
       <MetricCard
         metricCardLabel={"Keywords"}
-        metricCardValue={"60"}
+        metricCardValue={scores.keywords}
         color={"#BA7517"}
       />
       <MetricCard
         metricCardLabel={"Impact"}
-        metricCardValue={"45"}
+        metricCardValue={scores.impact}
         color={"#E24B4A"}
       />
       <MetricCard
         metricCardLabel={"Structure"}
-        metricCardValue={"90"}
+        metricCardValue={scores.structure}
         color={"#1D9E75"}
       />
     </div>
