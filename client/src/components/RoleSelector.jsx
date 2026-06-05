@@ -8,6 +8,7 @@ export default function RoleSelector({
   onSubmit,
   onError,
   onSetRole,
+  onSetLoadingState,
 }) {
   const roles = [
     "Sofware Engineer",
@@ -28,9 +29,12 @@ export default function RoleSelector({
 
     try {
       onError("");
+      onSetLoadingState(true);
       const responseData = await analyseResume(resumeTxt, jobRole);
       onSubmit(responseData);
+      onSetLoadingState(false);
     } catch (err) {
+      console.log(err);
       onError("Something went wrong - please try again");
     }
   }

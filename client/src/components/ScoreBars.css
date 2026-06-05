@@ -26,6 +26,7 @@
 .score-bar__fill {
   height: 0.6rem;
   border-radius: 9.9rem;
+  animation: fillbar 1s ease forwards;
 }
 
 .score-bar__value {
@@ -33,4 +34,13 @@
   color: #ffffff;
   min-width: 24px;
   text-align: right;
+}
+
+@keyframes fillbar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
 }

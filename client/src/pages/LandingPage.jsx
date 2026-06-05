@@ -6,7 +6,11 @@ import RoleSelector from "../components/RoleSelector";
 import TrustBadges from "../components/TrustBadges";
 import "./LandingPage.css";
 
-export default function LandingPage({ onSubmit, onSetRole }) {
+export default function LandingPage({
+  onSubmit,
+  onSetRole,
+  onSetLoadingState,
+}) {
   const [resumeTxt, setResumeTxt] = useState("");
   const [error, setError] = useState("");
   return (
@@ -26,6 +30,7 @@ export default function LandingPage({ onSubmit, onSetRole }) {
         onSubmit={onSubmit}
         onError={setError}
         onSetRole={onSetRole}
+        onSetLoadingState={onSetLoadingState}
       />
 
       <hr className="divider" />

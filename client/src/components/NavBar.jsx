@@ -14,7 +14,7 @@ export default function NavBar({ results, onReset }) {
         <button
           className="analyse-another-btn"
           onClick={() => {
-            onReset();
+            onReset(null);
           }}
         >
           Analyse Another{" "}
